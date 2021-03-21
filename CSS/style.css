@@ -1,7 +1,6 @@
 * {
   font-family: 'Raleway', sans-serif;
   outline: none;
-  font-size: 18px;
 }
 
 a {
@@ -18,28 +17,29 @@ a {
 
 /* .container {
   width: 80%;
+  margin-left: 10%;
 } */
 
 /*********HEADER************/
 
 .header {
   display: flex;
-  font-size: 18px;
+  position: relative;
+  font-size: 22px;
   justify-content: space-between;
   height: 10vh;
   padding-top: 50px;
 }
 
 .logo {
-  width: 32%;
+  width: 35%;
 }
 
 .links-container {
-  transform: translateX(-200px);
+  transform: translateX(-160px);
 }
 .link {
-  margin: 30px;
-  padding-top: 40px;
+  padding: 40px;
   cursor: pointer;
 }
 .hebergement {
@@ -49,14 +49,18 @@ a {
 
 .inscription {
   position: absolute;
-  right: 3%;
-  top: 40px;
+  right: 1%;
+  top: 28px;
   color: var(--blue);
   cursor: pointer;
+  font-weight: bolder;
 }
 
 /****************MAIN**********/
 
+.search-container {
+  margin: 20px;
+}
 .search-bar {
   display: flex;
   height: 45px;
@@ -67,7 +71,7 @@ a {
   font-size: 25px;
 }
 .search-subtitle {
-  color: var(--grey);
+  color: grey;
   font-size: 18px;
 }
 
@@ -101,13 +105,14 @@ a {
 /**filter-container*******/
 
 .filters-container {
-  margin-top: 20px;
+  margin: 20px;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   font-weight: bold;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
 }
 
 .filter {
@@ -118,20 +123,20 @@ a {
 
 .test {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: var(--light-blue);
   justify-content: center;
   align-items: center;
-  transform: translateX(22px);
+  transform: translateX(35px);
 }
 
 .filter-content {
-  border: 2px solid var(--grey);
-  border-radius: 0 20px 20px 0;
+  border: 3px solid var(--grey);
+  border-radius: 0 26px 26px 0;
   border-left: transparent;
-  padding: 7px 15px 7px 28px;
+  padding: 15px 20px 15px 45px;
 }
 
 .filter-fas,
@@ -165,14 +170,22 @@ a {
 .hebergements-container {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
+  margin: 20px;
 }
 
 /*left*/
 .heber-left {
-  width: 55%;
+  width: 67%;
   background: var(--grey);
-  border-radius: 8px;
+  border-radius: 25px;
 }
+
+.heber-left h2 {
+  margin: 40px;
+  font-size: 25px;
+}
+
 .hl-container {
   display: flex;
   flex-wrap: wrap;
@@ -183,14 +196,14 @@ a {
   width: 300px;
   background: white;
   border-radius: 18px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 0.7em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 4px 4px 4px rgba(122, 122, 122, 0.158);
-  padding-bottom: 10px;
+  padding: 5px;
   margin-bottom: 50px;
 }
 
@@ -206,9 +219,9 @@ a {
 
 /*right*/
 .heber-right {
-  width: 25%;
+  width: 30%;
   background: var(--grey);
-  border-radius: 8px;
+  border-radius: 25px;
 }
 
 .heber-right-header {
@@ -218,18 +231,19 @@ a {
   padding-left: 40px;
   padding-right: 40px;
   font-weight: bolder;
+  font-size: 25px;
 }
 
 .heber-right-cards-container {
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
-
+  justify-content: center;
   align-content: space-between;
 }
 
 .heber-right-card {
-  width: 400px;
+  width: 90%;
   background: white;
   display: flex;
   border-radius: 20px;
@@ -263,10 +277,14 @@ a {
 
 .activites-col-container {
   display: flex;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 18px;
+}
+
+.col-cont {
   position: relative;
   flex-flow: wrap;
-  justify-content: space-around;
-  border-radius: 18px;
 }
 
 .aic-img {
@@ -286,12 +304,20 @@ a {
   margin-left: 20px;
 }
 
+.aic-even {
+  flex-direction: column;
+}
+
 /*****************FOOTER*********************/
 
 footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
   background: var(--grey);
   margin-top: 50px;
+}
+
+.footer-col {
+  margin: 10px;
 }
