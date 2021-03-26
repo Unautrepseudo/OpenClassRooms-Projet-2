@@ -38,7 +38,7 @@ a {
 }
 
 .links-container {
-  transform: translateX(-160px);
+  transform: translateX(-180px);
 }
 .link {
   padding: 40px;
@@ -51,7 +51,7 @@ a {
 
 .inscription {
   position: absolute;
-  right: 1%;
+  right: 2%;
   top: 28px;
   color: var(--blue);
   cursor: pointer;
@@ -181,6 +181,8 @@ a {
 .hebergements-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
   font-size: 20px;
   margin: 20px;
 }
@@ -269,21 +271,40 @@ a {
   align-content: space-between;
 }
 
+.hrc-body h5 {
+  font-size: 21px;
+  margin: 0;
+  padding-top: 10px;
+}
 .heber-right-card {
   width: 90%;
+  height: 200px;
   background: white;
   display: flex;
   border-radius: 20px;
   justify-content: space-around;
-  /* margin: 30px; */
+  margin: 30px;
 }
 
 .hrc-img-container {
-  width: 45%;
-  height: 100%;
+  width: 40%;
+  /* overflow: hidden; */
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  /* align-items: stretch; */
 }
 .hrc-img {
   width: 100%;
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+}
+
+.hrc-body {
+  width: 55%;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hrc-stars-container {
@@ -306,6 +327,7 @@ a {
 
 .activites-col-container {
   display: flex;
+  height: 600px;
   justify-content: space-around;
   position: relative;
   border-radius: 18px;
@@ -313,7 +335,12 @@ a {
 
 .col-cont {
   position: relative;
-  flex-flow: wrap;
+  /* flex-flow: wrap; */
+}
+
+.aic-even .col-cont {
+  height: 60%;
+  overflow: hidden;
 }
 
 .aic-img {
@@ -324,7 +351,7 @@ a {
   position: absolute;
   background: white;
   color: black;
-  width: 22%;
+  width: 100%;
   bottom: 0px;
   border-radius: 0 0 18px 18px;
 }
