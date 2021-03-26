@@ -1,6 +1,7 @@
 * {
   font-family: 'Raleway', sans-serif;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -33,6 +34,7 @@ a {
 
 .logo {
   width: 35%;
+  margin-left: 20px;
 }
 
 .links-container {
@@ -87,7 +89,7 @@ a {
 #search-input {
   border: 1px solid var(--grey);
   text-align: center;
-  width: 280px;
+  width: 300px;
   font-size: 18px;
 }
 
@@ -112,6 +114,7 @@ a {
   font-weight: bold;
   font-weight: bold;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 70%;
 }
 
@@ -137,6 +140,7 @@ a {
   border-radius: 0 26px 26px 0;
   border-left: transparent;
   padding: 15px 20px 15px 45px;
+  cursor: pointer;
 }
 
 .filter-fas,
@@ -163,6 +167,13 @@ a {
   margin-right: 10px;
   margin-left: 10px;
   font-size: 12px;
+}
+
+.filter-eco :hover {
+  background: var(--grey);
+  transition: 0.3s;
+  color: var(--blue);
+  text-shadow: 2px rgba(26, 25, 25, 0.315);
 }
 
 /*****hebergement container*******/
@@ -193,28 +204,44 @@ a {
 }
 
 .hebergement-card {
-  width: 300px;
+  width: 350px;
+  max-height: 300px;
   background: white;
   border-radius: 18px;
   font-size: 20px;
   line-height: 0.7em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 4px 4px 4px rgba(122, 122, 122, 0.158);
   padding: 5px;
   margin-bottom: 50px;
 }
 
-.image {
-  width: 95%;
-  max-height: 50%;
+.img-container {
+  overflow: hidden;
+  max-height: 300px;
   border-radius: 12px 12px 0 0;
+}
+
+.image {
+  width: 100%;
+}
+
+.heber-card-body {
+  padding: 10px;
+  padding-top: 0;
 }
 
 .cbi-price {
   font-weight: bold;
+}
+
+.hlc-show-more {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 36px;
+  padding-bottom: 40px;
 }
 
 /*right*/
@@ -257,7 +284,6 @@ a {
 }
 .hrc-img {
   width: 100%;
-  height: 100%;
 }
 
 .hrc-stars-container {
@@ -267,12 +293,15 @@ a {
 /*******************ACTIVITES********************/
 
 .activite-title {
-  font-size: 30px;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 .aic-col {
   width: 22%;
   display: flex;
   box-shadow: 4px 4px 4px rgba(122, 122, 122, 0.158);
+  border-radius: 18px;
 }
 
 .activites-col-container {
