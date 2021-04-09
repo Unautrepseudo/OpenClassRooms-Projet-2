@@ -9,6 +9,9 @@ a {
   color: black;
   cursor: pointer;
 }
+li {
+  list-style: none;
+}
 
 :root {
   --blue: #0065fc;
@@ -16,16 +19,20 @@ a {
   --grey: #f2f2f2;
 }
 
+.container {
+  overflow: hidden;
+}
+
 /* .container {
-  width: 80%;
-  margin-left: 10%;
+  width: 98%;
+  margin-left: 1%;
 } */
 
 /*********HEADER************/
 
 .header {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   font-size: 22px;
   justify-content: space-between;
   height: 10vh;
@@ -39,6 +46,7 @@ a {
 
 .links-container {
   transform: translateX(-180px);
+  display: flex;
 }
 .link {
   padding: 40px;
@@ -52,7 +60,7 @@ a {
 .inscription {
   position: absolute;
   right: 2%;
-  top: 28px;
+  top: 51px;
   color: var(--blue);
   cursor: pointer;
   font-weight: bolder;
@@ -65,38 +73,42 @@ a {
 }
 .search-bar {
   display: flex;
-  height: 45px;
+  height: 60px;
 }
 
 .search-title {
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 35px;
 }
 .search-subtitle {
   color: grey;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 23px;
+  padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 .fa-map-container {
   display: flex;
   background: var(--grey);
   justify-content: center;
-  border-radius: 12px 0 0 12px;
-  width: 50px;
+  border-radius: 15px 0 0 15px;
+  width: 60px;
   align-items: center;
+  cursor: pointer;
 }
 
 #search-input {
   border: 1px solid var(--grey);
   text-align: center;
-  width: 300px;
+  width: 350px;
   font-size: 18px;
 }
 
 .search-btn {
   background: var(--blue);
   color: white;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 15px 15px 0;
   border: none;
   cursor: pointer;
   font-size: 18px;
@@ -108,14 +120,19 @@ a {
 
 .filters-container {
   margin: 20px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   font-weight: bold;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 70%;
+}
+
+.fifil {
+  font-size: 25px;
 }
 
 .filter {
@@ -149,10 +166,13 @@ a {
 }
 
 .info {
+  margin-top: 35px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   color: grey;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 .info-icon {
@@ -162,11 +182,11 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid var(--grey);
+  border: 2px solid var(--grey);
   padding: 2px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .filter-eco :hover {
@@ -182,21 +202,32 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
   font-size: 20px;
   margin: 20px;
 }
 
 /*left*/
 .heber-left {
-  width: 67%;
+  width: 71%;
   background: var(--grey);
   border-radius: 25px;
 }
 
 .heber-left h2 {
   margin: 40px;
+  margin-bottom: 30px;
+  font-size: 29px;
+  font-weight: bolder;
+}
+
+h5 {
+  font-weight: bold;
   font-size: 25px;
+  padding: 15px 15px 15px 0px;
+}
+
+.card-body-info {
+  padding: 0px 15px 15px 0px;
 }
 
 .hl-container {
@@ -221,12 +252,14 @@ a {
 
 .img-container {
   overflow: hidden;
-  max-height: 300px;
+  max-height: 190px;
+  display: flex;
   border-radius: 12px 12px 0 0;
 }
 
 .image {
   width: 100%;
+  object-fit: cover;
 }
 
 .heber-card-body {
@@ -238,17 +271,23 @@ a {
   font-weight: bold;
 }
 
+.stars-container {
+  display: flex;
+  font-size: 16px;
+  justify-content: flex-start;
+}
+
 .hlc-show-more {
   display: inline-block;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: bolder;
+  font-size: 26px;
   margin-left: 36px;
   padding-bottom: 40px;
 }
 
 /*right*/
 .heber-right {
-  width: 30%;
+  width: 420px;
   background: var(--grey);
   border-radius: 25px;
 }
@@ -257,10 +296,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 29px;
 }
 
 .heber-right-cards-container {
@@ -272,31 +310,30 @@ a {
 }
 
 .hrc-body h5 {
-  font-size: 21px;
   margin: 0;
   padding-top: 10px;
 }
 .heber-right-card {
   width: 90%;
-  height: 200px;
+  height: 220px;
   background: white;
   display: flex;
-  border-radius: 20px;
+  border-radius: 25px;
   justify-content: space-around;
-  margin: 30px;
+  margin-bottom: 40px;
 }
 
 .hrc-img-container {
-  width: 40%;
-  /* overflow: hidden; */
-  border-radius: 20px 0 0 20px;
+  width: 45%;
+  border-radius: 25px 0 0 25px;
   display: flex;
-  /* align-items: stretch; */
 }
+
 .hrc-img {
   width: 100%;
-  padding: 10px;
-  border-radius: 20px 0 0 20px;
+  padding: 8px;
+  border-radius: 25px 0 0 25px;
+  object-fit: cover;
 }
 
 .hrc-body {
@@ -305,21 +342,31 @@ a {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.hrc-card-body-info {
+  transform: translateY(-50px);
 }
 
 .hrc-stars-container {
+  display: flex;
   justify-self: flex-end;
+  position: relative;
+  font-size: 16px;
 }
 
 /*******************ACTIVITES********************/
 
 .activite-title {
-  font-size: 25px;
+  font-size: 29px;
   margin-left: 30px;
   margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 29px;
+  font-weight: bolder;
 }
 .aic-col {
-  width: 22%;
+  width: 410px;
   display: flex;
   box-shadow: 4px 4px 4px rgba(122, 122, 122, 0.158);
   border-radius: 18px;
@@ -339,29 +386,44 @@ a {
 }
 
 .aic-even .col-cont {
-  height: 60%;
+  height: 50%;
   overflow: hidden;
 }
 
 .aic-img {
   width: 100%;
   border-radius: 18px;
+  object-fit: cover;
+  border-radius: 18px;
 }
+
 .aic-overlay {
   position: absolute;
   background: white;
   color: black;
   width: 100%;
+  height: 70px;
   bottom: 0px;
   border-radius: 0 0 18px 18px;
 }
 
+.aic-img-biggest {
+  flex-grow: 2;
+  border-radius: 18px;
+}
+
 .aic-overlay h3 {
-  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
 }
 
 .aic-even {
   flex-direction: column;
+}
+
+.col-cont2 {
+  padding: 20px;
 }
 
 /*****************FOOTER*********************/
@@ -372,8 +434,279 @@ footer {
   flex-wrap: wrap;
   background: var(--grey);
   margin-top: 50px;
+  padding: 20px;
 }
 
 .footer-col {
   margin: 10px;
+}
+
+.foot-h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+/********************RESPONSIVE***************/
+
+@media screen and (max-width: 1585px) {
+  /**filter-container*******/
+
+  .filters-container {
+    margin: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .heber-left {
+    width: 100%;
+    order: 2;
+  }
+  .heber-right {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heber-right-card {
+    width: 400px;
+    margin: 20px;
+  }
+
+  .hrc-img-container {
+    width: 55%;
+  }
+
+  .hrc-card-body-info {
+    transform: translateY(-25px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    position: relative;
+    top: -25px;
+    margin-left: 20px;
+  }
+
+  .links-container {
+    transform: translate(250px, -75px);
+    display: flex;
+  }
+
+  /**filter-container*******/
+
+  .heber-left {
+    width: 100%;
+    order: 2;
+  }
+
+  .heber-left h2 {
+    text-align: center;
+  }
+
+  .heber-right {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hebergement-card {
+    width: 330px;
+  }
+
+  .heber-right-card {
+    width: 600px;
+    margin: 20px;
+  }
+
+  .hrc-img-container {
+    width: 55%;
+  }
+
+  .hrc-card-body-info {
+    transform: translateY(-25px);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  /*********HEADER************/
+
+  .container {
+    overflow: hidden;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    height: 15vh;
+  }
+
+  .logo {
+    position: relative;
+    top: -22px;
+    width: 35%;
+    margin-left: 20px;
+  }
+
+  .links-container {
+    display: flex;
+    width: 100%;
+    transform: translate(1%, -60%);
+  }
+  .link {
+    padding-bottom: 15px;
+    cursor: pointer;
+  }
+  .hebergement {
+    border: transparent;
+    border-bottom: 3px solid var(--blue);
+    color: rgb(11, 90, 236);
+  }
+
+  .activites {
+    border-bottom: 3px solid rgba(128, 128, 128, 0.329);
+  }
+
+  .inscription {
+    right: 5%;
+  }
+
+  /****************MAIN**********/
+
+  .search-container {
+    padding-top: 20px;
+    margin: 20px;
+  }
+  .search-bar {
+    display: flex;
+    height: 60px;
+  }
+
+  .search-title {
+    font-size: 28px;
+  }
+  .search-subtitle {
+    font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+
+  /**filter-container*******/
+
+  .filters-container {
+    width: 100%;
+  }
+
+  .fifil {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filter-content {
+    font-size: 20px;
+
+    border-left: transparent;
+    padding: 15px 20px 15px 45px;
+    cursor: pointer;
+  }
+
+  .info {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  .info-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .info p {
+    font-size: 17px;
+    padding-top: 15px;
+  }
+
+  /*****hebergement container*******/
+
+  .hebergements-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+
+  /*left*/
+  .heber-left {
+    width: 100%;
+    background: white;
+    border-radius: 0px;
+    order: 2;
+  }
+
+  .heber-left h2 {
+    margin-top: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .hlc-show-more {
+    font-size: 25px;
+    margin-left: 0px;
+    padding-bottom: 40px;
+  }
+
+  /*right*/
+  .heber-right {
+    width: 375px;
+    border-radius: 0px;
+  }
+
+  .hrc-body h5 {
+    font-size: 22px;
+    margin: 0;
+    padding-top: 10px;
+  }
+  .heber-right-card {
+    width: 98%;
+    height: 160px;
+    margin-bottom: 15px;
+  }
+
+  .hrc-body {
+    width: 55%;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hrc-card-body-info {
+    transform: translateY(-20px);
+  }
+
+  /****************FOOTER************/
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: var(--grey);
+    margin-top: 50px;
+    padding: 20px;
+  }
 }

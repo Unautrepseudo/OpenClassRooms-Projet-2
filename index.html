@@ -15,80 +15,86 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <title>Reservia</title>
   </head>
+
   <body>
     <div class="container">
-      <section class="header">
+      <nav class="header">
         <a href="#">
           <img src="Reservia@3x.png" class="logo" alt="logo reservia" />
         </a>
-        <div class="links-container">
-          <a href="#hebergement" class="hebergement link">Hébergements</a>
-          <a href="#activite" class="activites link">Activités</a>
-        </div>
+        <ol class="links-container">
+          <li>
+            <a href="#hebergement" class="hebergement link">Hébergements</a>
+          </li>
+          <li>
+            <a href="#activite" class="activites link">Activités</a>
+          </li>
+        </ol>
         <p class="inscription">S'inscrire</p>
-      </section>
+      </nav>
       <section class="main">
         <div class="search-container">
-          <h2 class="search-title">
+          <h1 class="search-title">
             Trouvez votre hébergement pour des vacances de rêve
-          </h2>
+          </h1>
           <h3 class="search-subtitle">
             En plein centre ville ou en pleine nature
           </h3>
-          <div class="search-bar">
-            <span class="fa-map-container">
+          <form class="search-bar">
+            <label for="search-input" class="fa-map-container">
               <i class="fas fa-map-marker-alt"></i>
-            </span>
+            </label>
             <input
               type="text"
               name="town"
               id="search-input"
               placeholder="Marseille, France"
             />
-            <button type="button" class="search-btn">Rechercher</button>
-          </div>
+            <button type="submit" class="search-btn">Rechercher</button>
+          </form>
           <div class="filters-container">
-            <span class="fifil">Filtres</span>
-            <span class="filter-eco filter">
+            <div class="fifil">Filtres</div>
+            <div class="filter-eco filter">
               <span class="test">
                 <i class="fas fa-money-bill-wave filter-fas"></i>
               </span>
               <p class="filter-content">Economique</p>
-            </span>
-            <span class="filter-eco filter">
+            </div>
+            <div class="filter-eco filter">
               <span class="test">
                 <i class="fas fa-child filter-fas"></i>
               </span>
               <p class="filter-content">Familial</p>
-            </span>
-            <span class="filter-eco filter">
+            </div>
+            <div class="filter-eco filter">
               <span class="test">
                 <i class="fas fa-heart filter-fas"></i>
               </span>
               <p class="filter-content">Romantique</p>
-            </span>
-            <span class="filter-eco filter">
+            </div>
+            <div class="filter-eco filter">
               <span class="test">
                 <i class="fas fa-dog filter-fas"></i>
               </span>
               <p class="filter-content">Animaux authorisés</p>
-            </span>
+            </div>
           </div>
-          <span class="info">
+          <div class="info">
             <span class="info-icon">
               <i class="fas fa-info filter-fas"></i>
             </span>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
-          </span>
+          </div>
         </div>
         <div id="hebergement" class="hebergements-container">
           <div class="heber-left">
             <h2>Hébergements à Marseille</h2>
             <div class="hl-container">
-              <article>
+              <div>
                 <a href="" class="hebergement-card">
                   <div class="img-container">
                     <img
@@ -111,8 +117,8 @@
                     </span>
                   </div>
                 </a>
-              </article>
-              <article>
+              </div>
+              <div>
                 <a href="" class="hebergement-card">
                   <div class="img-container">
                     <img
@@ -135,8 +141,8 @@
                     </span>
                   </div>
                 </a>
-              </article>
-              <article>
+              </div>
+              <div>
                 <a href="" class="hebergement-card">
                   <div class="img-container">
                     <img
@@ -159,8 +165,8 @@
                     </span>
                   </div>
                 </a>
-              </article>
-              <article>
+              </div>
+              <div>
                 <a href="" class="hebergement-card">
                   <div class="img-container">
                     <img
@@ -183,8 +189,8 @@
                     </span>
                   </div>
                 </a>
-              </article>
-              <article>
+              </div>
+              <div>
                 <a href="" class="hebergement-card">
                   <div class="img-container">
                     <img
@@ -207,8 +213,8 @@
                     </span>
                   </div>
                 </a>
-              </article>
-              <article>
+              </div>
+              <div>
                 <a href="" class="hebergement-card">
                   <div class="img-container">
                     <img
@@ -231,7 +237,7 @@
                     </span>
                   </div>
                 </a>
-              </article>
+              </div>
             </div>
             <a href="" class="hlc-show-more">Afficher plus</a>
           </div>
@@ -241,7 +247,7 @@
               <i class="fas fa-chart-line"></i>
             </div>
             <div class="heber-right-cards-container">
-              <article class="heber-right-card">
+              <div class="heber-right-card">
                 <div class="hrc-img-container">
                   <img
                     class="hrc-img"
@@ -251,7 +257,7 @@
                 </div>
                 <div class="hrc-body">
                   <h5 class="card-body-title">Hôtel Le soleil du matin</h5>
-                  <p class="card-body-info">
+                  <p class="hrc-card-body-info">
                     Nuit à partir de <span class="cbi-price"> 128€ </span>
                   </p>
                   <span class="hrc-stars-container">
@@ -262,8 +268,8 @@
                     <i class="fas fa-star"></i>
                   </span>
                 </div>
-              </article>
-              <article class="heber-right-card">
+              </div>
+              <div class="heber-right-card">
                 <div class="hrc-img-container">
                   <img
                     class="hrc-img"
@@ -275,7 +281,7 @@
                   <h5 class="card-body-title">
                     Au coeur de l'eau Chambres d'hôtes
                   </h5>
-                  <p class="card-body-info">
+                  <p class="hrc-card-body-info">
                     Nuit à partir de <span class="cbi-price"> 71€ </span>
                   </p>
                   <span class="hrc-stars-container">
@@ -286,8 +292,8 @@
                     <i class="far fa-star"></i>
                   </span>
                 </div>
-              </article>
-              <article class="heber-right-card">
+              </div>
+              <div class="heber-right-card">
                 <div class="hrc-img-container">
                   <img
                     class="hrc-img"
@@ -297,7 +303,7 @@
                 </div>
                 <div class="hrc-body">
                   <h5 class="card-body-title">Hôtel Tout bleu et Blanc</h5>
-                  <p class="card-body-info">
+                  <p class="hrc-card-body-info">
                     Nuit à partir de <span class="cbi-price"> 68€ </span>
                   </p>
                   <span class="hrc-stars-container">
@@ -308,7 +314,7 @@
                     <i class="far fa-star"></i>
                   </span>
                 </div>
-              </article>
+              </div>
             </div>
           </aside>
         </div>
@@ -326,9 +332,9 @@
               </div>
             </div>
             <div class="aic-even aic-col">
-              <div class="col-cont">
+              <div class="col-cont aic-img-biggest">
                 <img
-                  class="aic-img"
+                  class="aic-img aic-img-biggest"
                   src="IMG/small/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                   alt="image du fort de Pomègue"
                 />
@@ -361,21 +367,21 @@
               <div class="col-cont">
                 <img
                   class="aic-img"
-                  src="IMG/small/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  src="IMG/small/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                   alt="Fort de Pomègues"
                 />
                 <div class="aic-overlay">
-                  <h3>Fort de Pomègues</h3>
+                  <h3>Notre-Dame-De-La-Garde</h3>
                 </div>
               </div>
               <div class="col-cont2">
                 <img
                   class="aic-img"
-                  src="IMG/small/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  src="IMG/small/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                   alt="Îles du Frioul"
                 />
                 <div class="aic-overlay">
-                  <h3>Îles du Frioul</h3>
+                  <h3>Parc Longchamp</h3>
                 </div>
               </div>
             </div>
@@ -384,20 +390,20 @@
       </section>
       <footer>
         <div class="f1 footer-col">
-          <h2>A propos</h2>
+          <h2 class="foot-h2">A propos</h2>
           <p>Fonctionnement du site</p>
           <p>Conditions générales de vente</p>
           <p>Données et confidentialité</p>
         </div>
         <div class="footer-col">
-          <h2>Nos hébergements</h2>
+          <h2 class="foot-h2">Nos hébergements</h2>
           <p>Charte qualité</p>
           <p>Soumettre votre hôtel</p>
         </div>
         <div class="footer-col">
-          <h2>Assistance</h2>
+          <h2 class="foot-h2">Assistance</h2>
           <p>Centre d'aide</p>
-          <a href="mailto:contact@reservia.com">Nous contacter</a>
+          <p>Nous contacter</p>
         </div>
       </footer>
     </div>
