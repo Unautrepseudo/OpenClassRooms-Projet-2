@@ -1,16 +1,6 @@
 * {
   font-family: 'Raleway', sans-serif;
   outline: none;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-li {
-  list-style: none;
 }
 
 :root {
@@ -19,21 +9,34 @@ li {
   --grey: #f2f2f2;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+
 .container {
   overflow: hidden;
 }
 
-/* .container {
-  width: 98%;
-  margin-left: 1%;
-} */
+.container {
+  width: 80%;
+  margin: auto;
+}
 
 /*********HEADER************/
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  font-size: 22px;
+  font-size: 18px;
   justify-content: space-between;
   height: 10vh;
   padding-top: 50px;
@@ -59,7 +62,7 @@ li {
 
 .inscription {
   position: absolute;
-  right: 2%;
+  right: 12%;
   top: 51px;
   color: var(--blue);
   cursor: pointer;
@@ -73,18 +76,18 @@ li {
 }
 .search-bar {
   display: flex;
-  height: 60px;
+  height: 50px;
 }
 
 .search-title {
-  font-weight: bolder;
-  font-size: 35px;
+  font-weight: bold;
+  font-size: 26px;
 }
 .search-subtitle {
   color: grey;
   font-weight: bold;
-  font-size: 23px;
-  padding-top: 10px;
+  font-size: 18px;
+  padding-top: 15px;
   padding-bottom: 25px;
 }
 
@@ -96,12 +99,13 @@ li {
   width: 60px;
   align-items: center;
   cursor: pointer;
+  font-size: 19px;
 }
 
 #search-input {
   border: 1px solid var(--grey);
   text-align: center;
-  width: 350px;
+  width: 240px;
   font-size: 18px;
 }
 
@@ -119,20 +123,19 @@ li {
 /**filter-container*******/
 
 .filters-container {
-  margin: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   font-weight: bold;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
   width: 70%;
+  flex-wrap: wrap;
 }
 
 .fifil {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .filter {
@@ -143,20 +146,20 @@ li {
 
 .test {
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background: var(--light-blue);
   justify-content: center;
   align-items: center;
-  transform: translateX(35px);
+  transform: translateX(18px);
 }
 
 .filter-content {
-  border: 3px solid var(--grey);
+  border: 2px solid rgba(51, 51, 51, 0.171);
   border-radius: 0 26px 26px 0;
   border-left: transparent;
-  padding: 15px 20px 15px 45px;
+  padding: 15px 20px 15px 20px;
   cursor: pointer;
 }
 
@@ -172,7 +175,7 @@ li {
   align-items: center;
   color: grey;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .info-icon {
@@ -449,264 +452,4 @@ footer {
 footer p {
   font-size: 20px;
   padding-top: 10px;
-}
-
-/********************RESPONSIVE***************/
-
-@media screen and (max-width: 1585px) {
-  /**filter-container*******/
-
-  .filters-container {
-    margin: 0;
-    padding-top: 20px;
-    width: 100%;
-  }
-
-  .heber-left {
-    width: 100%;
-    order: 2;
-  }
-  .heber-right {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .heber-right-card {
-    width: 400px;
-    margin: 20px;
-  }
-
-  .hrc-img-container {
-    width: 55%;
-  }
-
-  .hrc-card-body-info {
-    transform: translateY(-25px);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    position: relative;
-    top: -25px;
-    margin-left: 20px;
-  }
-
-  .links-container {
-    transform: translate(250px, -75px);
-    display: flex;
-  }
-
-  /**filter-container*******/
-
-  .heber-left {
-    width: 100%;
-    order: 2;
-  }
-
-  .heber-left h2 {
-    text-align: center;
-  }
-
-  .heber-right {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .hebergement-card {
-    width: 330px;
-  }
-
-  .heber-right-card {
-    width: 600px;
-    margin: 20px;
-  }
-
-  .hrc-img-container {
-    width: 55%;
-  }
-
-  .hrc-card-body-info {
-    transform: translateY(-25px);
-  }
-}
-
-@media screen and (max-width: 376px) {
-  /*********HEADER************/
-
-  .container {
-    overflow: hidden;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-    height: 15vh;
-  }
-
-  .logo {
-    position: relative;
-    top: -22px;
-    width: 35%;
-    margin-left: 20px;
-  }
-
-  .links-container {
-    display: flex;
-    width: 100%;
-    transform: translate(1%, -60%);
-  }
-  .link {
-    padding-bottom: 15px;
-    cursor: pointer;
-  }
-  .hebergement {
-    border: transparent;
-    border-bottom: 3px solid var(--blue);
-    color: rgb(11, 90, 236);
-  }
-
-  .activites {
-    border-bottom: 3px solid rgba(128, 128, 128, 0.329);
-  }
-
-  .inscription {
-    right: 5%;
-  }
-
-  /****************MAIN**********/
-
-  .search-container {
-    padding-top: 20px;
-    margin: 20px;
-  }
-  .search-bar {
-    display: flex;
-    height: 60px;
-  }
-
-  .search-title {
-    font-size: 28px;
-  }
-  .search-subtitle {
-    font-size: 19px;
-    padding-top: 15px;
-    padding-bottom: 45px;
-  }
-
-  /**filter-container*******/
-
-  .filters-container {
-    width: 100%;
-  }
-
-  .fifil {
-    width: 100%;
-    font-size: 25px;
-  }
-
-  .filter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .filter-content {
-    font-size: 20px;
-
-    border-left: transparent;
-    padding: 15px 20px 15px 45px;
-    cursor: pointer;
-  }
-
-  .info {
-    margin-top: 35px;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    color: grey;
-    font-weight: bold;
-    font-size: 19px;
-  }
-  .info-icon {
-    width: 30px;
-    height: 30px;
-  }
-  .info p {
-    font-size: 17px;
-    padding-top: 15px;
-  }
-
-  /*****hebergement container*******/
-
-  .hebergements-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 20px;
-  }
-
-  /*left*/
-  .heber-left {
-    width: 100%;
-    background: white;
-    border-radius: 0px;
-    order: 2;
-  }
-
-  .heber-left h2 {
-    margin-top: 40px;
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bolder;
-  }
-
-  .hlc-show-more {
-    font-size: 25px;
-    margin-left: 0px;
-    padding-bottom: 40px;
-  }
-
-  /*right*/
-  .heber-right {
-    width: 375px;
-    border-radius: 0px;
-  }
-
-  .hrc-body h5 {
-    font-size: 22px;
-    margin: 0;
-    padding-top: 10px;
-  }
-  .heber-right-card {
-    width: 98%;
-    height: 160px;
-    margin-bottom: 15px;
-  }
-
-  .hrc-body {
-    width: 55%;
-    padding: 10px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .hrc-card-body-info {
-    transform: translateY(-20px);
-  }
-
-  /****************FOOTER************/
-  footer {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    background: var(--grey);
-    margin-top: 50px;
-    padding: 20px;
-  }
 }
