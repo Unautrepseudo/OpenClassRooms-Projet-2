@@ -36,7 +36,7 @@ li {
 .header {
   display: flex;
   flex-wrap: wrap;
-  font-size: 18px;
+  font-size: 19px;
   justify-content: space-between;
   height: 10vh;
   padding-top: 50px;
@@ -126,16 +126,15 @@ li {
   padding-top: 30px;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
   font-weight: bold;
-  justify-content: space-around;
-  width: 70%;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .fifil {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .filter {
@@ -146,20 +145,20 @@ li {
 
 .test {
   display: flex;
-  width: 55px;
-  height: 55px;
+  width: 51px;
+  height: 51px;
   border-radius: 50%;
   background: var(--light-blue);
   justify-content: center;
   align-items: center;
-  transform: translateX(18px);
+  transform: translateX(24px);
 }
 
 .filter-content {
   border: 2px solid rgba(51, 51, 51, 0.171);
   border-radius: 0 26px 26px 0;
   border-left: transparent;
-  padding: 15px 20px 15px 20px;
+  padding: 13px 20px 13px 35px;
   cursor: pointer;
 }
 
@@ -185,11 +184,11 @@ li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid var(--grey);
+  border: 3px solid var(--grey);
   padding: 2px;
   margin-right: 10px;
   margin-left: 10px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .filter-eco :hover {
@@ -211,7 +210,7 @@ li {
 
 /*left*/
 .heber-left {
-  width: 71%;
+  width: 62%;
   background: var(--grey);
   border-radius: 25px;
 }
@@ -290,7 +289,7 @@ h5 {
 
 /*right*/
 .heber-right {
-  width: 420px;
+  width: 500px;
   background: var(--grey);
   border-radius: 25px;
 }
